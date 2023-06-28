@@ -1,0 +1,21 @@
+<%- include("header") -%>
+
+<h1><%= title_of_post %></h1>
+<p><%= text_of_post %></p>
+
+<% if(loginuser===title_of_post){ %>
+    <div style="display: flex;">
+        <div style="margin: 5px;">
+            <form action="/delete" method="post">
+                <button type="submit" name="title" value="<%= title_of_post %>" class="btn btn-dark">del</button>
+            </form>
+        </div>
+        <div style="margin: 5px;">
+            <form action="/update" method="post">
+                <button type="submit" name="title" value="<%= title_of_post %>" class="btn btn-dark">upd</button>
+            </form>
+        </div>
+    </div>
+<% } %>
+
+<%- include("footer") -%>

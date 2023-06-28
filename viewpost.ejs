@@ -1,0 +1,12 @@
+<%- include("header") -%>
+
+<div class="container-fluid">
+    <h1 style="margin-bottom: 30px;margin-top: 10px;">Hey here are some guided path of your successfull seniors</h1>
+
+    <% for(var i=0;i<obj.length;i++){ %>
+        <h3 style="font-family: 'Akaya Telivigala', cursive;"><%= obj[i].title %></h3>
+        <p style="margin-bottom: 30px;font-family: 'Josefin Sans', sans-serif;"><%= obj[i].text; %></p>
+    <%}%>
+
+    
+</div>

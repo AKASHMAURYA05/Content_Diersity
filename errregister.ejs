@@ -1,0 +1,27 @@
+<%- include("header") -%>
+
+<div class="alert alert-danger" role="alert">
+    Username already exist !!
+    Try to Login
+</div>
+
+<div style="height: 500px;display: flex;">
+    <form action="/register" method="post" style="width: 200px;margin: auto;margin-top: auto;">
+        <h1>Register</h1>
+            <div>
+                <label for="email">Email   </label>
+                <input type="email" name="username">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password">
+            </div>
+            <div>
+                <label>Username</label>
+                <input type="text" name="title">
+            </div>
+        <button type="submit" class="btn btn-dark">Register</button>
+    </form>
+</div>
+
+<%- include("footer") -%>

@@ -1,0 +1,20 @@
+<%- include("header") -%>
+
+<div class="container-fluid">
+    <form action="/compose" method="post">
+        <h1>Update Post</h1>
+        <div>
+            <label style="font-family: 'Akaya Telivigala', cursive;font-weight: 700;margin-bottom: 5px;">Title : <%= title %></label>
+            <br/>
+            <input type="hidden" name="title" value="<%= title %>" size="100" class="p1">
+        </div>
+        <div>
+            <label style="font-family: 'Akaya Telivigala', cursive;font-weight: 700;margin-top: 10px;margin-bottom: 5px;">Post</label>
+            <br/>
+            <textarea cols="103" rows="10" name="text" class="p1"></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-info">Publish</button>
+    </form>
+</div>
+
+<%- include("footer") -%>

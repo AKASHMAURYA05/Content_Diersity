@@ -1,0 +1,14 @@
+<%- include("newheader") -%>
+
+<div class="container-fluid">
+    <h1>Hey Compose your journey to help your juniors!!</h1>
+    <h3>
+        View Your Post 
+        <form action="/viewyourpost" method="post">
+            <button type="submit" name="title" value="<%= loginuser %>" class="btn btn-dark">View</button>
+        </form>
+    </h3>
+    
+</div>
+
+<%- include("footer") -%>
